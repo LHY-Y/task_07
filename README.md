@@ -1,2 +1,1 @@
-# task_07
-task_06을 이어서 창작
+# 기본 ParticleSystem 코드를 이어서 창작
