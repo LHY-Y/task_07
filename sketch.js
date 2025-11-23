@@ -16,7 +16,8 @@ function draw() {
     wind.normalize();
     wind.mult(0.2);
     system.applyForce(wind);
-  }
+    system.particles.push(new FireParticle(system.origin));
+    }
 
   system.addParticle();
   system.run();
