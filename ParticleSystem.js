@@ -24,4 +24,12 @@ class ParticleSystem {
   }
 }
 
+  applyRepeller(repeller) {
+    //{!4} Calculating a force for each Particle based on a Repeller
+    for (let particle of this.particles) {
+      let force = repeller.repel(particle);
+      particle.applyForce(force);
+    }
+  }
+
 }

@@ -1,8 +1,10 @@
 let system;
+let repeller;
 
 function setup() {
   createCanvas(720, 400);
   system = new ParticleSystem(createVector(width / 2, height/5*2));
+  repeller = new Repeller(width / 2, 250);
 }
 
 function draw() {
@@ -21,4 +23,7 @@ function draw() {
 
   system.addParticle();
   system.run();
+  system.applyRepeller(repeller);
+
+  repeller.show();
 }
